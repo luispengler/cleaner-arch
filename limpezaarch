@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo "Parte mais chata é esperar, concorda? ##
+echo "Parte mais chata é esperar, concorda?"
 
 sudo pacman -Syy; clear
 
@@ -16,4 +16,5 @@ echo "limpando seu cache, seu porco."
 
 sudo du -sh ~/.cache/ && rm -rf ~/.cache/* && clear
 
-
+echo "Terminamos a faxina com merda acumulada por séculos ;)"
+echo "Meu nome é Luís, obrigado por usar este script ;)"
