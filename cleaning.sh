@@ -2,11 +2,11 @@
 
 ## running sudo pacman -Syy ##
 
-sudo pacman -Syy
+sudo pacman -Syy;
 
 ## the next command will delete your package cache, but only the uninstalled stuff ##
 
-sudo pacman -Sc
+sudo pacman -Sc;
 
 ## you don't need this every time ## 
 
