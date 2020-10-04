@@ -1,12 +1,9 @@
 #! /bin/bash
 
-echo "Parte mais chata é esperar, concorda?"
-
-sudo pacman -Syy; clear
 
 echo "O próximo comando vai apagar seu cache de pacotes, mas apenas as coisas não instaladas"
 
-sudo pacman -Sc -y -y; clear
+sudo pacman -Sc -s -s; clear
 
 echo "Não precisa disso toda vez, masok"
 
