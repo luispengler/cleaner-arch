@@ -1,9 +1,15 @@
-# cleaningarch
-## Este repositório foi criado para ajudar a limpar seu arch, ou distros baseadas em arch. Leia as linhas de código se quiser (recomendado). ##
-## Eu usei vim como editor de texto, mas desde que você baixe o arquivo em formato .sh você só precisará roda-lo com: ##
-bash cleaning.sh
+# Introduction
+ 
+ This repository was created to help you clean your arch, or any arch based distro.
+ Follow the instalation instructions.  
 
-
-## Qualquer problema que tiver, me diga para que eu possa melhorar. Este é o meu primeiro projeto aqui ;) ##
-
-
+# Instalation
+<pre><code>git clone https://github.com/luispengler/cleaner-arch.git
+</code></pre>   
+ Run the command below to give it executable previligies.
+<pre><code>chmod +x cleaning.sh
+</code></pre>
+    
+# Running
+<pre><code>bash cleaning.sh
+</code></pre>
