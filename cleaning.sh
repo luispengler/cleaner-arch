@@ -1,17 +1,15 @@
 #! /bin/bash
 
-echo "the next command will delete your package cache, but only the uninstalled stuff you forgot to put in the trash can"
+echo "The next command will remove unused packages (AKA Orphan packages)"
 
-sudo pacman -Sc;
+sudo pacman -Qtdq && sudo pacman -Rns $(pacman -Qtdq);
 
-echo "you don't need this every time, and you still hate cleaning up!!!"
-
-sudo pacman -Qtdq && sudo pacman -Rns $(pacman -Qtdq)
-
-echo "cleaning up your cache, you pork"
-
-sudo du -sh ~/.cache/ && rm -rf ~/.cache/* && clear
-
-echo "Your room is finally clean, bitch. UHAHAHAHAHAHAHAHAHAHAHA"
-echo "My name is Luis, thanks for running this scprit ;)"
-
+while true; do
+    read -p "Do you wanna erase everthing from your cache directory?	" yn
+        case $yn in
+        [Yy]* ) sudo du -sh ~/.cache/ && rm -rf ~/.cache/* && clear;
+echo "Now everything is clean again."; break;;
+        [Nn]* ) exit;;
+        * ) echo "Yes or no only.";;
+    esac
+done
