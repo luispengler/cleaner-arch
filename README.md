@@ -5,7 +5,6 @@
 # Instalation
 <pre><code>git clone https://github.com/luispengler/cleaner-arch.git
 </code></pre>
- Run the command below to give it executable previligies.
 <pre><code>chmod +x cleaning.sh
 </code></pre>
     
